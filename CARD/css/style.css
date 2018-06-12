@@ -1,0 +1,22 @@
+.card div{
+    height: 300;
+    width: 250;
+    background-image: url("../img/personaX.jpg");
+    background-size: cover;
+    
+}
+
+.card div button{
+   margin-top: 220px;
+   background-image: none;
+    
+}
+
+ #info {
+    text-align: center;
+    width: 250;
+    background-image: none;
+}
+
+
+

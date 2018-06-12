@@ -1,0 +1,68 @@
+html{
+    background-image: url("../img/fondo.jpg");
+    background-size: cover;
+}
+
+.formulario input {
+    display: block;
+    width: 200px;
+    padding: 5px;
+    margin-right:10px; 
+    margin-left: 10px;
+    margin-bottom:15px 
+   
+
+
+}
+
+#frmRegistro{
+    float: left;
+}
+
+.formulario{
+    width: 70%;
+    margin: 0 auto;
+   
+}
+
+.formulario label{
+    margin-left: 10px;
+    }
+
+
+
+ .nombre {
+    display: inline-block;
+}
+
+.apellido{
+    display: inline-block; 
+}
+
+h1{
+ margin-right: auto;
+ margin-left: auto;
+ text-align: center;    
+
+}
+
+.infoGeneral p{
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+     width: 350px;
+}
+
+.botonRegistrarse input{
+    margin-left:120px ;
+    text-align: center;
+   
+}
+
+.foto {
+    float: right;
+    margin-top: 50px;
+    margin-right: 40px;
+
+width: 30%;
+}

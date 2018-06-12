@@ -1,0 +1,47 @@
+.card div{
+     height: 100px;
+    width: 250;  
+    text-align: center; 
+    
+}
+
+.card div img{
+    position: absolute;
+
+}
+.card{
+    margin: 10px;
+    float: left;
+    background: #3a3a3a;
+    height: 310px
+    ;
+}
+
+
+
+ #info {
+    text-align: center;
+    width: 250;
+    margin-top: 10px;
+    margin-bottom:10px ;
+   
+}
+
+.card img{
+    display:block;
+    margin:auto;
+}
+
+.card div button{
+    display: block;
+    text-align: right;
+}
+
+.card div p{
+    margin-top: 10px;
+     margin-bottom:10px ; 
+}
+
+
+
+

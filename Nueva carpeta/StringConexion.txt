@@ -1,0 +1,1 @@
+jdbc:sqlserver://DESKTOP-IL7OV8N\\MSSQLSERVER01;DatabaseName=BD_proyecto; integratedsecurity = true

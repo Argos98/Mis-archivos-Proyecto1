@@ -1,0 +1,46 @@
+html{
+    background: #EFF2F0;
+}
+
+
+.error_input{
+    border: 2px solid #d63031;
+}
+
+header{
+    background: #FF5733;
+}
+
+header h1{
+    text-align: center;
+}
+
+header nav{
+    text-align: center;
+    padding: 50px;
+    margin-bottom:50px;     
+
+}
+
+header nav a{
+   color: #000000;
+    text-decoration: none;
+    margin-right: 15px;
+   
+}
+
+.formulario form{
+    text-align: center;
+         
+}
+
+.formulario input{
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom:5px; 
+}
+
+.formulario label{
+    display: inline;
+}

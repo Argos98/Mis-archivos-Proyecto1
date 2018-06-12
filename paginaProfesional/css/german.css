@@ -1,0 +1,63 @@
+main{
+    background: #2f3640;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}
+h2{
+    font-size:24px;
+}
+.perfil{
+    background: #192a56;
+    width: 700px;
+    margin: 0 auto;
+    color: #718093;
+    padding: 10px;
+}
+.perfil p{
+    margin-bottom:10px; 
+}
+.bold{
+    font-weight: bold;
+}
+
+.float{
+    display: flow-root;
+}
+.bio h2{
+    font-size: 24px;
+    margin-bottom: 10px;
+    
+}
+.bio h3{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.imgCont{
+    max-width: 40%;
+    float: left;
+    margin-right: 10px;
+}
+.imgCont img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.tecnologias{
+    margin: 0 auto;
+}
+.tecnologias h2{
+    text-align: center;
+}
+.cTec{
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+    width: 150px;
+    float: left;
+    border: 1px solid;
+    height: 100px;;
+}
+.cTec .imgCont{
+    float: left;
+}

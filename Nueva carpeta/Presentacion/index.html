@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+
+
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#portada">Portada</a>
+            <a href="#introduccion">Introducción</a>
+            <a href="#tdd">TDD</a>
+            <!--<a href="">Ventajas y desventajas</a>-->
+            <a href="#vModel">Modelo en V</a>
+            <!--<a href="">Ventajas y desventajas</a>-->
+            <a href="#comparacion">Comparación de metodologías</a>
+            <a href="#recomendacion">Recomendaciones</a>
+            <a href="#conclusion">Conclusión</a>
+
+        </nav>
+    </header>
+
+    <main>
+        <div class="container" id="portada">
+            <h1 id="titulo">Universidad Cenfotec</h1>
+
+            <h2>Tema</h2>
+            <label>Modelo en V y TDD</label>
+
+            <h2>Integrantes</h2>
+            <label>Ramsés Miranda Cambronero</label>
+            <label>German Montero Ramírez</label>
+            <label>David Serrano Gutierrez </label>
+            <label>Mauricio Tacsan Chaves</label>
+            <label>Franciny Vargas Arbelo</label>
+
+
+            <h2>Profesores</h2>
+            <label>Álvaro Cordero</label>
+            <label>Pablo Monestel</label>
+        </div>
+
+        <div class="container" id="introduccion">
+            <h1>Introducción</h1>
+            <p class="pLeft60">A lo largo del tiempo se han hecho estudios que revelan un alto porcentaje de proyectos fallidos ya sea por muchas
+                razones, entre las principales causas está la escasa participación de los usuarios, requerimientos y especificaciones
+                incompletas, cambios frecuentes en los requerimientos y especificaciones, falta de soporte ejecutivo, incompetencia
+                tecnológica, expectativas no realistas, objetivos poco claros, entre otros, fue entonces cuando las industrias
+                se percataron de que debían invertir en el desarrollo y perfeccionamiento de metodologias y tecnologias,
+                entre las principales metodologías está el test driven development y el modelo en v
+            </p>
+
+            <div class="imgRight40">
+                <img src="./img/introimg.jpg" alt="Imagen introductoria">
+            </div>
+
+        </div>
+
+        <div class="container" id="tdd">
+
+            <h1>Test Driven Development</h1>
+            <div class="pLeft60">
+                <p>Tiene 2 etapas:</p>
+                <li class="bulletTdd"> Escritura de las pruebas</li>
+                <li class="bulletTdd"> Refactorización.</li>
+                <p> Se caracteriza ya por:</p>
+                <li class="bulletTdd"> Eliminando focos innecesarios de atención.</li>
+                <li class="bulletTdd"> Incluye al dueño del producto como una parte del desarrollo.</li>
+                <p> Pasos a tener en cuenta:</p>
+                <li class="bulletTdd"> Prueba a aplicar al código (sin código escrito)</li>
+                <li class="bulletTdd"> Contemplación de la prueba</li>
+                <li class="bulletTdd"> Codificación (codificación fallida)</li>
+                <li class="bulletTdd"> Refactorización. </li>
+                <p> Puntos de interés: </p>
+                <li class="bulletTdd"> Programas flexibles y moldeables.</li>
+                <li class="bulletTdd"> Pruebas pequeñas y específicas.</li>
+            </div>
+
+            <div class="imgRight40">
+                <img src="./img/tddimg.jpg" alt="Imagen TDD">
+            </div>
+
+            <div class="table">
+                <div class="left">
+                    <div class="leftRight">
+                        <h3>Ventajas</h3>
+
+                        <li> Mayor calidad.</li>
+                        <li> Mayor simplicidad en el diseño.</li>
+                        <li> Menos tiempo invertido en debugging de errores.</li>
+                        <!-- alt 0160 -->
+
+                    </div>
+                </div>
+
+                <div class="right">
+                    <h3>Desventajas</h3>
+
+                    <li>Interfaz de usuario.</li>
+                    <li>La Base de datos.</li>
+                    <li>Errores no identificados.</li>
+                    <li>Pronunciada curva de aprendizaje.</li>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container" id="vModel">
+
+            <h1>Modelo en V</h1>
+
+            <div id="vModelLeft">
+                <li class="bulletTdd">El modelo en v es una variación del modelo en cascada en donde se relacionan las pruebas con el análisis
+                    y el diseño.</li>
+                <li class="bulletTdd">Consta de 4 fases.</li>
+                <li class="bulletTdd">Los planes y los casos de uso de uso se van elaborando a medida que se avanza en el desarrollo del proyecto
+                    por lo que el proyecto siempre estará sujeto a cambios.</li>
+                <li class="bulletTdd">Este tipo de modelado se utiliza comúnmente en proyectos de poco alcance.</li>
+            </div>
+
+            <div id="vModelRight">
+                <img src="./img/Vmodel.png" alt="Modelo en V">
+            </div>
+
+            <div class="table">
+
+                <div class="left">
+                    <div class="leftRight">
+                        <h3>Ventajas</h3>
+
+                        <li>Minimización de los riesgos del proyecto.</li>
+                        <li>Mejora y Garantía de Calidad.</li>
+                        <li>Reducción de los gastos totales durante todo el proyecto y sistema de Ciclo de Vida.</li>
+                        <li>La relación entre las etapas de desarrollo y los distintos tipos de prueba facilitan lo localización
+                            de fallos.</li>
+
+                    </div>
+                </div>
+
+                <div class="right">
+                    <h3>Desventajas</h3>
+
+                    <li>El cliente deberá esperar a que el producto finalice su ciclo de vida.</li>
+                    <li>Es difícil que el cliente exponga explícitamente todos los requisitos.</li>
+                    <li>El producto final obtenido puede que no refleje todos los requisitos del usuario.</li>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="container" id="comparacion">
+            <h1>Comparación de metodologías</h1>
+            <div id="tablaComparativa">
+                <img src="./img/tabla.png" alt="Tabla comparativa">
+            </div>
+        </div>
+
+        <div class="container" id="recomendacion">
+            <h1>Recomendaciones</h1>
+
+            <div class="table">
+                <div class="left">
+                    <div class="leftRight">
+                        <h3>Modelo en V</h3>
+                        <p>Esta metodología de desarrollo es ideal usarla cuando es un programa pequeño con un equipo de pocas
+                            personas, también es bueno para programadores más principiantes debido a que es más simple encontrar
+                            errores. Este modelo no es ideal para trabajos o equipos muy grandes ya que sería de mucho costo
+                            revisar paso por paso un programa.
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="right">
+                    <h3>Test Driven Development</h3>
+                    <p>Esta metodología es utilizada por muchas compañías a través del mundo debido a que es eficaz organizada
+                        y apta para proyectos donde hay muchas personas involucradas y cuando se tienen aplicaciones con
+                        muchos requerimientos es mejor poder implementar cambios con más fluidez debido a que es menor el
+                        costo que probar cada faceta de la aplicación.</p>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container" id="conclusion">
+            <h1>Conclusión</h1>
+            <p>Estas metodologías han avanzado mucho a través del tiempo haciendo que cada vez más personas puedas trabajar
+                en un solo programa el cual puede ser muy grande y con mucho código, pero un código documentado y legible
+                donde cada miembro de un equipo conoce los cambios que se realizaron o tienen que realizarse en el programa, haciendo
+                así una manera donde se crean, ordenados y mejores programas.
+            </p>
+        </div>
+
+
+    </main>
+
+</body>
+<footer> ©CopyRight</footer>
+
+</html>

@@ -1,0 +1,43 @@
+html{
+    font: verdana;
+    background-color: azure;
+}
+
+h1{
+    margin: 10px;
+    background-color: black;
+    color: beige;
+    font-size: 30px;
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+}
+
+h2{
+    color: purple;
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
+    font-weight: bold;
+}
+h2:hover{
+    color: orchid;
+}
+h3{
+    margin-left: 30px; 
+    font-size: 20px;
+    font-weight: bold;
+}
+
+p{
+    margin: 20px;
+    font-size: 18px;
+}
+
+img{
+    margin: 45px;
+    float: left;
+    height: 250px;
+    width: 350px;
+    border: solid black;
+}

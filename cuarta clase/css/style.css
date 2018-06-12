@@ -1,0 +1,24 @@
+html{
+    background-color: #dfe6e9;;
+}
+
+
+
+
+.card{
+    width: 250px;
+    height:300px ;
+    border: 5px solid #34495e;
+    text-align: center; 
+    
+
+
+}
+.card img{
+    width: 110px;
+    height:80px ;
+}
+
+.card h2{
+    text-align: justify;
+}

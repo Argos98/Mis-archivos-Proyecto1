@@ -1,0 +1,32 @@
+.mau{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    width: 800px;
+    height: 1200px;
+background-color: darkslategray
+}
+.mau{
+    padding-left: 220px;
+    padding-right: 220px;
+}
+
+.mau header {
+background-color: aquamarine
+
+}
+
+.mau p {
+background-color: darkgreen
+
+}
+.color{
+    background-color: darkolivegreen;
+    padding-left: 120px;
+    padding-right: 120px;
+    width: 100;
+    height: 50;
+}
+
+
+
+
