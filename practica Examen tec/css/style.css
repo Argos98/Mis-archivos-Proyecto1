@@ -7,6 +7,13 @@ html{
     border: 2px solid #d63031;
 }
 
+main {
+    background: #bdc3c7;
+    height: 500px;
+    width: 70%;
+    margin: auto;
+}
+
 header{
     background: #FF5733;
 }
@@ -29,18 +36,29 @@ header nav a{
    
 }
 
-.formulario form{
-    text-align: center;
-         
+
+.formulario{
+    padding-top:150px; 
+    margin-left:41%;
+    
 }
 
-.formulario input{
-    display: block;
-    text-align: center;
-    margin: 0 auto;
-    margin-bottom:5px; 
+.nombre{
+    margin-bottom: 10px;
 }
 
-.formulario label{
-    display: inline;
+.Fecha{
+    margin-bottom: 10px;
 }
+
+.Fecha  label{
+padding-right:81px; 
+}
+
+.boton {
+text-align: left;
+}
+
+
+
+

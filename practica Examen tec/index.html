@@ -3,6 +3,7 @@
 
 <head>
     <link rel="stylesheet" href="css/style.css">
+    <title>Crear lista</title>
 </head>
 
 <body>
@@ -28,14 +29,20 @@
         <div class="formulario">
             <form action="">
 
-                <label for="">Nombre de la lista</label>
-                <input type="text" name="txtNombreLista" id="txtNombreLista">
+                <div class="nombre">
+                    <label for="">Nombre de la lista</label>
+                    <input type="text" name="txtNombreLista" id="txtNombreLista">
+                </div>
 
-                <label for="">Fecha</label>
-                <input type="date" name="dtFecha" id="dtFecha">
+                <div class="Fecha">
+                    <label for="">Fecha</label>
+                    <input type="date" name="dtFecha" id="dtFecha">
+                </div>
 
-                <input type="button" name="btnRegistrar" id="btnRegistrar" value="Registar">
-
+                <div class="boton">
+                    <input type="button" name="btnRegistrar" id="btnRegistrar" value="Crear">
+                </div>
+                
             </form>
         </div>
     </main>
