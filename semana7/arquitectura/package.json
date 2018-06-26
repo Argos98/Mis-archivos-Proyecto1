@@ -1,14 +1,13 @@
 {
   "name": "arquitectura",
   "version": "1.0.0",
-  "description": "",
+  "description": "ejercicio de arquitectura",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "keywords": [],
-  "author": "Argos98",
+  "author": "Pabs",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.3",
