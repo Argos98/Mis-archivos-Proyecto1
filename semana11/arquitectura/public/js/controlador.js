@@ -8,18 +8,18 @@ Responsabilidades del controlador
 */
 
 'use strict';
-
-let idPersonaSelecionada = '';
-
 let listaPersonas = obtenerListaPersonas();
+let idPersonaSeleccionada = '';
+
 imprimirListaPersonas();
 const botonRegistrar = document.querySelector('#btnRegistrar');
-const bontoActualizar = document.querySelector('#bntActulaizar');
 
-bontoActualizar.hidden = true;
+const botonActualizar = document.querySelector('#btnActualizar');
 
-botonRegistrar.addEventListener('click', obtenerDatos);
-bontoActualizar.addEventListener('click', obtenerDatosEditar);
+botonActualizar.hidden = true;
+
+botonRegistrar.addEventListener('click' , obtenerDatos);
+botonActualizar.addEventListener('click' , obtenerDatosEditar);
 
 const inputNombre = document.querySelector('#txtNombre');
 const inputEmail = document.querySelector('#txtEmail');
@@ -30,114 +30,114 @@ const inputConfirmacion = document.querySelector('#txtConfirmacion');
 const inputFiltro = document.querySelector('#txtFiltro');
 const imagen = document.querySelector('#txtImagen');
 
-inputFiltro.addEventListener('keyup', function () {
+inputFiltro.addEventListener('keyup' , function(){
     imprimirListaPersonas(inputFiltro.value)
 });
 
-function obtenerDatos() {
-
+function obtenerDatos(){
+    
     let bError = false;
 
-    let sNombre = inputNombre.value;
+    let sNombre = inputNombre.value;    
     let sEmail = inputEmail.value;
     let sTelefono = inputTelefono.value;
     let nEdad = Number(inputEdad.value);
     let sContrasenna = inputContrasenna.value;
     let sConfirmacion = inputConfirmacion.value;
 
-
-
+    
+    
     bError = validar();
-    if (bError == true) {
+    if(bError == true){
         swal({
-            type: 'warning',
-            title: 'No se pudo registrar el usuario',
+            type : 'warning',
+            title : 'No se pudo registrar el usuario',
             text: 'Por favor revise los campos en rojo',
-            confirmButtonText: 'Entendido'
+            confirmButtonText : 'Entendido'
         });
         console.log('No se pudo registrar el usuario');
-    } else {
+    }else{
         console.log(imagenUrl);
         registrarPersona(sNombre, sEmail, sTelefono, nEdad, sContrasenna, imagenUrl);
         swal({
-            type: 'success',
-            title: 'Registro exitoso',
+            type : 'success',
+            title : 'Registro exitoso',
             text: 'El usuario se registró adecuadamente',
-            confirmButtonText: 'Entendido'
+            confirmButtonText : 'Entendido'
         });
         listaPersonas = obtenerListaPersonas();
         imprimirListaPersonas();
         limpiarFormulario();
     }
-
+    
 };
 
-function obtenerDatosEditar() {
-
+function obtenerDatosEditar(){
+    
     let bError = false;
 
-    let sNombre = inputNombre.value;
+    let sNombre = inputNombre.value;    
     let sEmail = inputEmail.value;
     let sTelefono = inputTelefono.value;
     let nEdad = Number(inputEdad.value);
-    let sContrasenna = inputContrasenna.value;
-    let sConfirmacion = inputConfirmacion.value;
+    
 
-
-
-    // bError = validar();
-    if (bError == true) {
+    
+    
+    //bError = validar();
+    if(bError == true){
         swal({
-            type: 'warning',
-            title: 'No se pudo registrar el usuario',
+            type : 'warning',
+            title : 'No se pudo registrar el usuario',
             text: 'Por favor revise los campos en rojo',
-            confirmButtonText: 'Entendido'
+            confirmButtonText : 'Entendido'
         });
         console.log('No se pudo registrar el usuario');
-    } else {
+    }else{
         console.log(imagenUrl);
-        actualizarPersona( idPersonaSelecionada, sNombre, sEmail, sTelefono, nEdad, sContrasenna, imagenUrl);
+        actualizarPersona(idPersonaSeleccionada,sNombre, sEmail, sTelefono, nEdad, imagen.src);
         swal({
-            type: 'success',
-            title: 'Registro exitoso',
-            text: 'El usuario se registró adecuadamente',
-            confirmButtonText: 'Entendido'
+            type : 'success',
+            title : 'Usuario actualizado',
+            text: 'El usuario se actualizó adecuadamente',
+            confirmButtonText : 'Entendido'
         });
         listaPersonas = obtenerListaPersonas();
         imprimirListaPersonas();
         limpiarFormulario();
+        botonActualizar.hidden = true;
+        botonRegistrar.hidden = false;
     }
-
+    
 };
-
-function imprimirListaPersonas(pFiltro) {
-
+function imprimirListaPersonas(pFiltro){
+    
     let tbody = document.querySelector('#tblPersonas tbody');
-    if (!pFiltro) {
+    if(!pFiltro){
         pFiltro = '';
     }
     tbody.innerHTML = '';
 
-    for (let i = 0; i < listaPersonas.length; i++) {
-        if (listaPersonas[i]['nombre_completo'].toLowerCase().includes(pFiltro.toLowerCase())) {
+    for(let i = 0; i < listaPersonas.length; i++){
+        if(listaPersonas[i]['nombre_completo'].toLowerCase().includes(pFiltro.toLowerCase())){
             let fila = tbody.insertRow();
-
+            
             let cFoto = fila.insertCell();
             let cNombre = fila.insertCell();
             let cEmail = fila.insertCell();
             let cTelefono = fila.insertCell();
             let cEdad = fila.insertCell();
             let cConfiguracion = fila.insertCell();
-
+    
             let imagen = document.createElement('img');
             imagen.src = listaPersonas[i]['foto'];
             imagen.classList.add('imageSettings');
 
-
+    
             cFoto.appendChild(imagen);
-
-
-
+           
+    
+    
             cNombre.innerHTML = listaPersonas[i]['nombre_completo'];
             cEmail.innerHTML = listaPersonas[i]['correo'];
             cTelefono.innerHTML = listaPersonas[i]['telefono'];
@@ -147,12 +147,12 @@ function imprimirListaPersonas(pFiltro) {
             let aModificar = document.createElement('a');
             aModificar.classList.add('fas');
             aModificar.classList.add('fa-pen');
-            aModificar.dataset._id = listaPersonas[i]['_id'];
+            aModificar.dataset._id =  listaPersonas[i]['_id'];
 
             let aBorrar = document.createElement('a');
             aBorrar.classList.add('fas');
             aBorrar.classList.add('fa-trash');
-            aBorrar.dataset._id = listaPersonas[i]['_id'];
+            aBorrar.dataset._id =  listaPersonas[i]['_id'];
 
             aModificar.addEventListener('click', llenarDatosFormulario);
             aBorrar.addEventListener('click', borrarPersona);
@@ -161,60 +161,60 @@ function imprimirListaPersonas(pFiltro) {
             cConfiguracion.appendChild(aBorrar);
 
         }
-
+        
     }
 
 };
 
-function validar() {
+function validar(){
     let bError = false;
 
     let regexSoloLetras = /^[a-z A-ZáéíóúÁÉÍÓÚñÑ]+$/;
     let regexSoloNumeros = /^[0-9]{1,3}$/;
 
     //Validación del nombre completo
-    if (inputNombre.value == '' || (regexSoloLetras.test(inputNombre.value) == false)) {
+    if(inputNombre.value == '' || (regexSoloLetras.test(inputNombre.value)==false) ){
         inputNombre.classList.add('error_input');
         bError = true;
-    } else {
+    }else{
         inputNombre.classList.remove('error_input');
     }
     //Validación del correo
-    if (inputEmail.value == '') {
+    if(inputEmail.value == ''){
         inputEmail.classList.add('error_input');
         bError = true;
-    } else {
+    }else{
         inputEmail.classList.remove('error_input');
     }
     //Validación del teléfono
-    if (inputTelefono.value == '') {
+    if(inputTelefono.value == ''){
         inputTelefono.classList.add('error_input');
         bError = true;
-    } else {
+    }else{
         inputTelefono.classList.remove('error_input');
     }
     //Validación de la edad
-    if (inputEdad.value == '' || (regexSoloNumeros.test(inputEdad.value) == false) || Number(inputEdad.value) < Number(inputEdad.min) || Number(inputEdad.value) > Number(inputEdad.max)) {
+    if(inputEdad.value == '' || (regexSoloNumeros.test(inputEdad.value) == false) || Number(inputEdad.value) < Number(inputEdad.min)  || Number(inputEdad.value) > Number(inputEdad.max)){
         inputEdad.classList.add('error_input');
         bError = true;
-    } else {
+    }else{
         inputEdad.classList.remove('error_input');
     }
 
     //Validación de la contraseña
 
-    if (inputContrasenna.value == '') {
+    if(inputContrasenna.value == ''){
         inputContrasenna.classList.add('error_input');
         bError = true;
-    } else {
+    }else{
         inputContrasenna.classList.remove('error_input');
     }
 
-    if (inputContrasenna.value != inputConfirmacion.value) {
+    if(inputContrasenna.value != inputConfirmacion.value){
         inputContrasenna.classList.add('error_input');
         inputConfirmacion.classList.add('error_input');
         bError = true;
-    } else {
+    }else{
         inputContrasenna.classList.remove('error_input');
         inputConfirmacion.classList.remove('error_input');
     }
@@ -222,26 +222,26 @@ function validar() {
     return bError;
 };
 
-function limpiarFormulario() {
-    inputNombre.value = '';
+function limpiarFormulario(){
+    inputNombre.value = '';    
     inputEmail.value = '';
-    inputTelefono.value = '';
-    inputEdad.value = 0;
+    inputTelefono.value ='';
+    inputEdad.value = '';
     inputContrasenna.value = '';
     inputConfirmacion.value = '';
+    idPersonaSeleccionada = '';
+    imagen.src = '';
 };
 
-function llenarDatosFormulario() {
-    bontoActualizar.hidden = false;
+function llenarDatosFormulario(){
     botonRegistrar.hidden = true;
+    botonActualizar.hidden = false;
+    
+    idPersonaSeleccionada =  this.dataset._id;// se obtiene el id del usuario seleccionado
+    
+    let usuario = obtenerPersonaPorId(idPersonaSeleccionada);
 
-    idPersonaSelecionada = this.dataset._id;// se obtiene el id del usuario seleccionado
-
-    let usuario = obtenerPersonaPorId(idPersonaSelecionada);
-
-
-
-    inputNombre.value = usuario['nombre_completo'];
+    inputNombre.value =  usuario['nombre_completo'];
     inputEmail.value = usuario['correo'];
     inputTelefono.value = usuario['telefono'];
     inputEdad.value = usuario['edad'];
@@ -250,6 +250,10 @@ function llenarDatosFormulario() {
 
 };
 
-function borrarPersona() {
+function borrarPersona(){
+    let id = this.dataset._id;
+    borrarPersonaPorId(id);
+    listaPersonas = obtenerListaPersonas();
+    imprimirListaPersonas();
 
 }
