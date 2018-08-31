@@ -1,0 +1,65 @@
+h1 {
+    text-align: center;
+    margin: 80px auto 50px auto;
+    font-size: 24px;
+}
+.tableContainer{
+    width: 85%;
+    display: block;
+    margin: 80px auto 0 auto;
+    font-size: 15px;   
+}
+.tableContainer tbody{
+    text-align: center;
+}
+thead th {
+    font-size: 1.05em;
+    display: table-cell;
+    vertical-align: inherit;
+    text-align: center;
+    border-bottom: 2px solid white;
+}
+
+/*.btnVerMas{
+    background-color: #fbb803;
+    border-radius: 3px;
+    border: none;
+    padding: 5px 2%;
+    font-family: 'Roboto' sans-serif;
+    color: #fff;
+    font-size: 1em;
+    outline:none;
+}
+
+.btnVerMas:hover{
+    background-color: #fbb876;
+    cursor: pointer;
+}*/
+
+
+.contFormulario2{
+    width: 85%;
+    margin: 0 auto;
+}
+#inputBuscar{
+    width: 20%;
+    outline: none;
+    padding: 3px 0 3px 5px;
+}
+
+/*.cambioEstado{
+    width: 70px;
+    font-size: 1em;;
+}*/
+
+/*input[type='radio'] {
+    display: none; 
+    width: 24px; 
+    height: 24px; 
+    margin: 5px 0px; 
+}*/
+
+#btnContrasenna{
+    display: block;
+    margin: 0 auto;
+}

@@ -1,0 +1,54 @@
+h2 {
+    font-size: 24px;
+    margin: 80px auto 50px auto;
+    text-align: center;
+}
+
+#tblProfesores{
+    margin: 80px auto 0 auto;
+    width: 90%;
+}
+
+thead{
+    border-bottom: #fff solid 2px;
+}
+
+thead th{
+    text-align: center;
+    /*padding: 15px 40px 15px 40px;*/
+}
+
+tbody td{
+    text-align: center;
+    /*padding: 15px 10px 15px 10px;*/
+    border-top: #fff solid 1px;
+}
+
+#txtFiltro{
+    float: left;
+    width: 20%;
+    outline: none;
+    padding: 3px 0 3px 5px;
+}
+
+#btnFiltro{
+    margin-left: 15px;
+}
+
+#rbtnNombre{
+    float: left;
+}
+
+.spnRadio{
+    float: left;
+    margin: 5px 10px 0 0;
+}
+
+.floatContainer{
+    margin-left: 5%;
+    display: flow-root;
+}
+
+#btnVerMas{
+    margin-bottom: 2px;
+}

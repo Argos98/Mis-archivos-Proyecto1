@@ -1,0 +1,193 @@
+/* body {
+    font-size: 16px;
+} */
+#contentRegistroTicket {
+    margin-top: 20px 
+}
+
+.title {
+    text-align: center;
+    margin: 0 auto;
+}
+
+p {
+    margin-top: 15px;
+    font-weight: 200;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+.formBox {
+    width: 70%;
+    margin: 0 auto;
+}
+
+input, select {
+    width: 100%;
+    margin-top: 6px;
+}
+.container {
+    width: 100%;
+    height: 250px;
+    margin-top: 20px;
+}
+
+.blockLeft .boxInpt {
+    margin: 35px 5% 25px 1.5%;
+        display: block;
+}
+
+div .blockLeft {
+    width: 45%;
+    float: left;
+}
+
+.blockRight {
+    width: 45%;
+    float: left;
+    display: flow-root;
+    margin-top: 20px;
+    margin-left: 9%;
+}
+
+
+
+.description {
+    width: 100%;
+    float: left;
+    padding: 0 5px;
+}
+
+.description input {
+    height:100px;
+}
+
+.btnRegistro {
+    margin: 30px 0 0 40%;
+    padding: 9px 5% 8px 5%;
+}
+
+
+    textarea {
+        width: 100%;
+        height: 85px;
+        border: 0px ;
+        border-radius: 5px;
+        font-family: 'Roboto', Arial, Helvetica, sans-serif;
+        margin: 10px 0px;
+    }
+
+    textarea::-moz-placeholder,
+    textarea::-webkit-input-placeholder {
+         font-family: 'Roboto', sans-serif, "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial;
+        }
+
+
+/* Estilos del Listar */
+
+#listaTickets {
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 35px;
+}
+
+#tblTicketAdmin {
+    width: 100%;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px auto;
+}
+
+.filtroTicket {
+    margin: 45px 0px;
+    width: 100%;
+}
+
+.filtroTicket input[type='radio'] {
+    /* display: none; */
+     width: 14px; 
+     height: 14px;
+     margin: 5px 0px;
+}
+
+
+.filtroTicket label {
+    padding-bottom: 5px; 
+    padding-left: 20px; 
+    padding-right: 10px;
+    margin: 8px 0px;
+}
+
+.filtroTicket select {
+    width: 17%;
+}
+
+                    
+.filtroTicket .sltUrgencia2{
+    width: 22%;
+}
+
+.filtroTicket  .inptbuscar {
+    width: 20%;
+}
+
+
+.btnFiltro {
+    float: right;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    padding: 5px 3%;
+}
+
+.btnLista {
+    margin: 0 auto 10px auto; 
+    width: 65%;
+    height: 29px;
+    padding: 5px 0px 5px 0;
+    background-color: #fbb308;
+    color: #fff;
+    /* margin-bottom: 10px; */
+}
+
+.btnImgErr {
+    width: 100%;
+    padding: 7px 0px;
+    content: 'Subir imagen';
+    background-color: #fbb308;
+    color: #454545;
+    border:  #fbb803 1px solid;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+.btnImgErr:hover {
+    background-color: #ff8e1d;
+    border:  #ff8e1d 1px solid;
+}
+
+.imgErrorContainer {
+    background-color:#454545;
+    width: 100%;
+
+}
+
+@supports(object-fit: contain){
+    .imgErrorContainer{
+    height: 85%;
+    object-fit: contain;
+    object-position:  center;
+    }
+}
+
+.boxImg {
+    border: #fbb308 1px solid;
+    width: 100%;
+    height: 235px;
+    margin-top: 6px;
+}
+

@@ -1,0 +1,83 @@
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/x-icon" href="img/logo.png" />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/generalStyle.css">
+    <link rel="stylesheet" href="css/notificaciones.css">
+    <link rel="stylesheet" href="css/ListarProyectos.css">
+    <link rel="stylesheet" href="css/listarProyectosCliente.css">
+
+    <title>Listar Proyectos</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="mainHeader">
+            <a id="notificacion" class="fLeft">
+                <i class="fas fa-bell"></i> Notificaciones</a>
+                <label for="">Bienvenido: </label>
+                <output id="txtnombreCliente" value=""></output>
+            <a href="javascript:logOut();" class="fRight">Cerrar sesión
+                <i class="fas fa-cog"></i>
+            </a>
+        </div>
+
+        <div class="menuLateral" id="divMenuLateral">
+            <i class="fas fa-align-justify"></i>
+        </div>
+
+    </header>
+
+    <main id="content">
+            <div class="modal none" id="modal">
+                    <div class="ModalNotificaciones">
+                        <a>X</a>
+                        <table id="tblNotificacion">
+                            <thead>
+                                <th>Notificaciones</th>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+        <h1>Listar Proyectos</h1>
+        <div class="tabla">
+            <table id="tblProyectos">
+                <thead>
+                    <th>Nombre del proyecto</th>
+                    <th>Fecha de entrega</th>
+                    <th>
+                        <i class="fas fa-eye"></i>
+                    </th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Julianas</td>
+                        <td>22/33/2018</td>
+                        <td>
+                            <a href="##">Ver más</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer>
+
+
+    </footer>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <script src="js/Proyecto/jquery-3.3.1.js"></script>
+    <script src="js/Login/login.js"></script>
+    <script src="js/Notificaciones/notificaciones.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2"></script>
+    <script src="js/Proyecto/registrarProyectoServicio.js"></script>
+    <script src="js/controlador.js"></script>
+    <script src="js/Cliente/controladorListarProyectoCliente.js"></script>
+</body>
+
+</html>

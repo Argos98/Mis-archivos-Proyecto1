@@ -1,0 +1,69 @@
+
+/*.fLeft {
+    margin-left: 15px;
+}*/
+
+input{
+    /*border: 1px solid;*/
+    display: block;
+    padding-left: 5px; 
+    outline: none;
+    width: 100%;
+}
+
+h2 {
+    font-size: 23px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.mainContainer{
+    border: 2px solid #fbb876;
+    padding: 50px 50px 18px 50px;
+    border-radius: 5%;
+    border-top-left-radius: 0%;
+    display: flow-root;
+}
+
+.fmr {
+    display: flow-root;
+    width: 50%;
+    /* margin: 0 auto; */
+    margin: 80px auto 0 auto;
+   /* margin: 80px auto 0 519px;*/
+}
+
+#leftContainer{
+    width: 48%;
+    float: left;
+}
+
+#rightContainer{
+    width: 48%;
+    float: right;
+}
+
+.btnRegistro{
+    float: right;
+    margin: 50px 0 0 0;
+}
+h1{
+    font-size: 27px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+
+/* .lblHide{  
+    display: none;
+    visibility: hidden;
+} */
+
+/*#lblCedulaError, #lblCorreoError, #lblTelError, #lblProfesionError{
+    border-left: #fbb803 3px solid;
+}*/
+
+/*.lblError{
+    display: block;
+    margin-bottom: 10px;
+}*/ 

@@ -1,0 +1,189 @@
+
+  input{
+      border: 1px solid #ffffff;
+  }
+ main .frmRegistrarProyectos .TituloPrincipal H1{
+     margin-bottom: 15px;
+     text-align: center;
+     font-size: 30px;
+     margin-left: 32%;
+     margin-right:40%; 
+     width: 30%;
+ }
+
+ .frmRegistrarProyectos {
+    margin: 0 auto;
+    width: 85%;
+    margin-top: 50px;
+    margin-left: 10%;
+ }
+
+ main .colupna1{
+    margin-top: 40px;
+    width: 45%;
+     float: left;
+    /* margin-right: %; */
+
+ }
+ main .colupna1 input{
+    margin-top: 5px;
+    margin-bottom: 20px;
+    display: block; 
+    width: 100%;
+
+} 
+
+main .colupna1 select{
+    display: block;
+    margin-top: 5px;
+    margin-bottom:20px;
+    width: 100%;
+   
+    
+}
+
+main .colupna1 .slDescripcion select{
+    padding-right: 77px;
+}
+
+main .colupna1 label{
+    
+    margin-bottom: 5px; 
+
+}
+
+main .colupna2{
+    margin-top: 40px;
+    float: right;
+    width: 50%;
+
+}
+
+main .colupna2 input{
+    margin-top: 5px;
+    margin-bottom:20px;
+    margin-top: 5px;
+
+    display: block;
+    width: 90%;
+}
+
+main .colupna2 .fecha input{
+  
+    display: block;
+   
+    
+}
+
+button{
+    margin: 0 auto;
+}
+
+
+textarea {
+    width: 90%;
+    height: 183px;
+    margin-top: 5px;
+    margin-bottom:21px;
+    border: 0px ;
+    border-radius: 5px;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+main .colupna2 select{
+    display: block;
+    margin-top: 5px;
+    margin-bottom:20px;
+    width: 91%;
+         
+}
+
+ main .button button{
+    margin: 0 auto;
+        margin-left: 39.5%;
+    width: 20%;
+    margin-top: 20px; 
+    margin-bottom: 15px;
+ }
+
+ .Tegnologias{
+     width: 100%;
+     margin: 0 auto;
+ }
+
+   h2{
+    display: inline-block;
+    font-size: 25px;
+    width: 60%;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    margin-left:38.5%; 
+   
+ }
+
+ 
+
+ .Tegnologias input{
+     height: 12px;
+     
+ }
+
+ .Tegnologias h3{
+     margin-top:10px;
+     margin-bottom: 5px;
+     text-align: center;
+ }
+
+  
+ .tecWed {
+    float: left;
+    width: 20%;
+    border: #fbb803 solid;
+    height: 250px;
+    margin-right: 9%; 
+    border-radius: 10px;
+    margin-left: 10%;
+
+ }
+
+ .tecMovil{
+     float: left;
+     width: 20%;
+     border: #fbb803 solid;
+     height: 250px;
+     margin-right: 9.5%; 
+     border-radius: 10px;
+ }
+ .tecBd{
+    float: left;
+    width: 20%;
+    border: #fbb803 solid;
+    height: 250px;
+    margin-right: 10%; 
+    border-radius: 10px;
+
+ }
+
+ .op{
+     margin-top: 5px;
+     margin-right: 0%;
+     margin-bottom: 5px; 
+     /* margin-left:36% ; */
+
+ }
+
+ .c1{
+    float: left;
+    margin-left: 3%;
+
+ }
+
+ .c2{
+    float: right;
+    margin-right: 3%;    
+ }
+
+
+
+
+

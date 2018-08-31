@@ -1,0 +1,11 @@
+html {
+    font-family: verdana;
+}
+
+header{
+    background: #C2EFC7;
+}
+
+header nav a{
+ text-decoration: none;   
+}

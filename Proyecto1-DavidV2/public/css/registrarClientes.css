@@ -1,0 +1,67 @@
+.fmr {
+    display: flow-root;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input, select {
+    border: 1px solid #ffffff;
+}
+
+h2 {
+    padding-top: 20px;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.fmr div:nth-child(2n+1) {
+    float: right;
+}
+
+.fmr div:nth-child(2n) {
+    float: left;
+}
+
+.fmr div {
+    width: 48%;
+    margin-bottom: 5px;
+}
+
+.fmr label+input, .fmr label+select, .fmr label+textarea {
+    display: block;
+    border-radius: 3px;
+    padding-left: 5px;
+    outline: none;
+    width: 100%;
+    resize: none;
+}
+
+.fmr label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.fmr h2 {
+    text-align: center;
+    clear: both;
+}
+
+.after {
+    position: relative;
+}
+
+.after:before {
+    border-left: 3px solid #fbb803;
+    content: "error";
+    position: absolute;
+    top: 43px;
+}
+
+.cedRepetida {
+    color: #d63031;
+}
+
+.fmr .btnRegistro {
+    margin-top: 15px;
+}
